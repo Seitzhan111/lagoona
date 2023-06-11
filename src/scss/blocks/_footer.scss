@@ -8,6 +8,9 @@
 	padding: 4.5rem;
 	background: $color-grey-dark;
 	border-radius: 1.5rem;
+	@media (max-width: 737px) {
+	  grid-template-columns: repeat(auto-fit, minmax(30.2rem, 1fr));
+	}
   }
   &__info{
 	display: grid;
@@ -34,19 +37,25 @@
 	  display: block;
 	  line-height: 150%;
 	}
-	&::after{
-	  content: "";
-	  background: url("../icons/footer/logo.svg") center / cover no-repeat;
+	&-logo{
 	  position: absolute;
-	  bottom: -18%;
+	  bottom: -4.6rem;
 	  right: 0;
-	  width: 25.4rem;
-	  height: 22.8rem;
+	  width: 50%;
+	  @media (max-width: 737px) {
+		bottom: -8rem;
+		right: 1.4rem;
+		width: 40%;
+	  }
 	}
   }
   &__social{
 	display: grid;
 	row-gap: 2rem;
 	align-content: start;
+	@media (max-width: 737px) {
+	  grid-template-columns: repeat(3, 1fr);
+	  justify-items: center;
+	}
   }
 }

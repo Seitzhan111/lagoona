@@ -10,21 +10,21 @@
 
 html{
   font-size: 62.5%;
-  @media (max-width: 1082px) {
+  @media (max-width: 1032px) {
+    font-size: 58%;
+  }
+  @media (max-width: 500px) {
     font-size: 50%;
   }
-  @media (max-width: 860px) {
-    font-size: 35%;
+  @media (max-width: 420px) {
+    font-size: 45%;
   }
-  @media (max-width: 617px) {
-    font-size: 25%;
-  }
-  @media (max-width: 451px) {
-    font-size: 20%;
-  }
-  @media (max-width: 357px) {
-    font-size: 15%;
-  }
+  //@media (max-width: 451px) {
+  //  font-size: 20%;
+  //}
+  //@media (max-width: 357px) {
+  //  font-size: 15%;
+  //}
 }
 
 body{
