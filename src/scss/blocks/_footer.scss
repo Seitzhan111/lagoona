@@ -1,0 +1,52 @@
+.footer{
+
+  &__row{
+	display: grid;
+	grid-template-columns: 30.2rem 1fr min-content;
+	justify-content: space-between;
+	gap: 12.5rem;
+	padding: 4.5rem;
+	background: $color-grey-dark;
+	border-radius: 1.5rem;
+  }
+  &__info{
+	display: grid;
+	row-gap: 3.8rem;
+	&-text{
+	  line-height: 190%;
+	  color: $color-white;
+	}
+	&-link{
+	  color: $color-brown-medium;
+	}
+  }
+  &__contacts{
+	position: relative;
+	&-text{
+	  line-height: 190%;
+	  color: $color-white;
+	  margin-bottom: 1.5rem;
+	}
+	&-links{
+	  margin-bottom: 1.5rem;
+	}
+	&-link{
+	  display: block;
+	  line-height: 150%;
+	}
+	&::after{
+	  content: "";
+	  background: url("../icons/footer/logo.svg") center / cover no-repeat;
+	  position: absolute;
+	  bottom: -18%;
+	  right: 0;
+	  width: 25.4rem;
+	  height: 22.8rem;
+	}
+  }
+  &__social{
+	display: grid;
+	row-gap: 2rem;
+	align-content: start;
+  }
+}

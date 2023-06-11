@@ -1,0 +1,43 @@
+.services{
+  &__title{
+	margin: 0 0 2rem 4rem;
+  }
+  &__cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(57.3rem, 1fr));
+	gap: 2.4rem;
+  }
+  &__card{
+	margin: 0 auto;
+	border-radius: 1.5rem;
+	background-color: $color-white;
+	&-img{
+	  width: 100%;
+	}
+	&-info{
+	  padding: 2.6rem 12.6rem 3.5rem 4.5rem;
+	}
+	&-link{
+	  display: flex;
+	  align-items: center;
+	  column-gap: .7rem;
+	  font-weight: 500;
+	  font-size: 2rem;
+	  color: $color-brown-medium;
+	  margin-bottom: 1.7rem;
+	  &:hover svg>path{
+		stroke: $color-brown-light;
+	  }
+	  &>svg{
+		@media (max-width: 860px) {
+		  width: 3rem;
+		  height: 1.5rem;
+		}
+	  }
+	}
+	&-description{
+	  line-height: 200%;
+	  color: $color-black;
+	}
+  }
+}

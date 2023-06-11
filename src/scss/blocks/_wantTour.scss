@@ -1,0 +1,63 @@
+.wantTour{
+  padding: 7rem 0;
+  &__row{
+	background: #E9E9E9;
+	padding: 4.5rem 4.5rem;
+	border-radius: 1.5rem;
+  }
+  &__title{
+	margin-bottom: 2rem;
+  }
+  &__block{
+	background-color: $color-white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 4.1rem;
+	padding: 3.1rem 2.8rem;
+	border-radius: 1.5rem;
+	@media (max-width: 860px) {
+	  flex-direction: column;
+	}
+	&-title{
+	  font-size: 1.2rem;
+	  font-weight: 400;
+	  color: $color-black;
+	  margin-bottom: 1.5rem;
+	}
+	&-select{
+	  border: none;
+	  &:focus{
+		border: none;
+		outline: none;
+	  }
+	}
+	&-date input{
+	  border: none;
+	  &:focus{
+		border: none;
+		outline: none;
+	  }
+	}
+	&-night input{
+	  border: none;
+	  border-bottom: .1rem solid $color-grey-light;
+	  width: 8rem;
+	  &:focus{
+		border: none;
+		outline: none;
+	  }
+	}
+	&-turists input{
+	  border: none;
+	  border-bottom: .1rem solid $color-grey-light;
+	  width: 8rem;
+	  &:focus{
+		border: none;
+		outline: none;
+	  }
+	}
+  }
+
+}

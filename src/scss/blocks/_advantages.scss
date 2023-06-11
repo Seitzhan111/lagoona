@@ -1,0 +1,24 @@
+.advantages{
+  padding: 7rem 0;
+  &__title{
+	margin: 0 0 2rem 4rem;
+  }
+  &__cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(27.6rem, 1fr));
+	gap: 2.2rem;
+  }
+  &__card{
+	background-color: $color-white;
+	padding: 4rem 4.2rem 3.2rem 4.5rem;
+	border-radius: 1.5rem;
+	&-icon{
+	  width: 10rem;
+	  margin-bottom: 1rem;
+	}
+	&-description{
+	  line-height: 200%;
+	  color: $color-black;
+	}
+  }
+}

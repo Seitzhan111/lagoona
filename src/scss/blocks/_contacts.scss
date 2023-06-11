@@ -1,0 +1,95 @@
+.contacts{
+  padding: 0 0 4rem;
+  &__title{
+	margin: 0 0 2rem 4rem;
+  }
+  &__row{
+	display: grid;
+	grid-template-columns: 37.5rem 1fr;
+	gap: 5.2rem;
+	background-color: $color-white;
+	padding: 4.5rem;
+	border-radius: 1.5rem;
+  }
+  &__info{
+	//display: grid;
+	//grid-template-columns: min-content 1fr;
+	//justify-items: start;
+	//gap: 4.7rem;
+	&-title{
+	  font-weight: 700;
+	  font-size: 2rem;
+	  color: $color-black;
+	}
+	&-text{
+	  line-height: 150%;
+	  color: $color-black;
+	}
+	&-link{
+	  display: inline-block;
+	  line-height: 150%;
+	  color: $color-brown-medium;
+	  &:hover{
+		color: $color-brown-light;
+	  }
+	}
+	&-email{
+	  &-text{
+		line-height: 150%;
+		color: $color-grey-medium;
+	  }
+	}
+	&-block{
+	  display: grid;
+	  grid-template-columns: min-content 1fr;
+	  margin-bottom: 4.9rem;
+	  &:nth-child(1){
+		gap: 8.3rem;
+	  }
+	  &:nth-child(2){
+		gap: 4.7rem;
+	  }
+	  &:nth-child(3){
+		gap: 9.3rem;
+	  }
+	  &:nth-child(4){
+		gap: 7.4rem;
+	  }
+
+	  position: relative;
+
+	  &::after{
+		content: "";
+		border-bottom: .1rem solid #E9E9E9;
+		width: 100%;
+		position: absolute;
+		bottom: -50%;
+		left: 0;
+	  }
+	  &:nth-child(3)::after{
+		content: "";
+		border-bottom: .1rem solid #E9E9E9;
+		width: 100%;
+		position: absolute;
+		bottom: -25%;
+		left: 0;
+	  }
+	}
+	&-btn{
+	  grid-column: 1 / 3;
+	  border: 1px solid $color-brown-medium;
+	  border-radius: 10px;
+	  color: $color-brown-medium;
+	  padding: 2.7rem 3rem;
+	  height: 7rem;
+	  display: inline-block;
+	  &:hover{
+		background-color: $color-brown-medium;
+		color: $color-white;
+	  }
+	}
+  }
+  &__img{
+	width: 100%;
+  }
+}

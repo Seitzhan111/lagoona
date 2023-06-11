@@ -1,0 +1,43 @@
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  @media (max-width: 1082px) {
+    font-size: 50%;
+  }
+  @media (max-width: 860px) {
+    font-size: 35%;
+  }
+  @media (max-width: 617px) {
+    font-size: 25%;
+  }
+  @media (max-width: 451px) {
+    font-size: 20%;
+  }
+  @media (max-width: 357px) {
+    font-size: 15%;
+  }
+}
+
+body{
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: #E5E5E5;
+}
+
+
+.container{
+  max-width: 120rem;
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}

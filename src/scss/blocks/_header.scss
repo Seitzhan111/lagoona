@@ -1,0 +1,66 @@
+.header{
+  padding: 3rem 0 7rem;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+    column-gap: 1.7rem;
+    padding-left: 2.3rem;
+    background: #F0BF5F;
+    border-radius: 1.5rem;
+    &>img {
+      width: 8.2rem;
+      height: 5.4rem;
+    }
+  }
+  &__contact{
+    font-weight: 500;
+    font-size: 2rem;
+    color: $color-grey;
+  }
+  &__logIn{
+    color: $color-brown-medium;
+    & span {
+      margin-right: .5rem;
+      & svg{
+        @media (max-width: 860px) {
+          width: 3rem;
+          height: 1.5rem;
+        }
+      }
+    }
+    &:hover{
+      color: $color-brown-light;
+    }
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.7rem 0;
+    background-color: $color-white;
+    border-radius: 1.5rem;
+    height: 7rem;
+  }
+  &__list{
+    display: flex;
+    column-gap: 4.5rem;
+  }
+  &__link{
+    color: $color-grey;
+  }
+  &__buttons{
+    display: flex;
+    column-gap: 4rem;
+  }
+}
